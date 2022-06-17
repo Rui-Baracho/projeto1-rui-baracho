@@ -42,3 +42,28 @@ $ git merge staging ( a branch onde vc fez as modificações sem alterar o codig
 
 
 ************** unindo os codigos de branch atravez do $ git pull request (merge democratico) **************
+na branch que voce esta modificando para poder enviar para a branch MASTER
+1- vc faz as modificações e utiliza o $ git add . 
+2- e faz o git commit -m "mensagem"
+3- utiliza o git push
+
+apos fazer isso seus arquivos esta na nuvem e é só voce entrar no github e nos arquivos modificado na sua branch vc usa o merge da branch que vc ta para a branch MASTER e solicitar um pull request
+voce ira para uma pagina onde voce falara o que voce mudou e embaixo explicara os detalhes
+
+o request seria uma solicitação para os outros desenvolvedores possam ver e o chefe aprovar essa solicitação e mergiar na branch master
+
+
+*************comando GIT IGNORE***************
+para voce não quer enviar alguns arquivos sobe para o controle de versão
+
+no $ git status ira aparecer 
+para usar o git ignore  voce precisa ir no terminal do git
+
+lá voce usa esse comando: $git touch .gitignore
+
+aparecera na pasta  onde trabalhara no seu projeto o arquivo .gitignore basta acessar no bloco de notas
+
+no bloco de notas voce digitara o nome do arquivo e o formato dele ex:
+se for pasta: nome da pasta/
+se for foto: foto.png
+arquivo: nome do arquivo.tipo do arquivo
