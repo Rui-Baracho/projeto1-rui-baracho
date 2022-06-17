@@ -1,3 +1,4 @@
+************** COMMITS **************
 commits
 $ git status - para saber o estado dos codigos, qual esta modificado e quais ja foram enviado 
 $ git add "nome do arquivo" - para adicionar o arquivo especifico para a fila do commit
@@ -9,12 +10,35 @@ $git push - onde voce ira puxar os arquivos para aquela branch
 
 
 
-
+************** criando uma branch **************
 branch - são pastas onde voce vai trabalhar o seu codigo
 para visualizar as branch
 $ git branch
 // logo apos isso aparecerá as branchs(pastas) feitas e a pasta usada no momento ( geralmente esta marcado com uma cor )
 
 para criar um branch
-$ git branch nome_do_branch(pasta)
+$ git branch nome_da_branch(pasta)
 
+para a sua branch criada seja a sua principal
+$ git checkout nome_da_branch
+
+OBS: voce pode usar um código só para criar e fazer com que sua branch seja a principal utilizando esse comando $ git checkout -b nome_da_branch
+
+************** unindo os codigos de branch diferentes (git merge) **************
+// é aconselhavel olhar qual branch esta para mandar esse codigo "USE O $ git branch"
+$ git checkout master (a branch onde voce quer colocar os codigos)
+$ git merge staging ( a branch onde vc fez as modificações sem alterar o codigo ja em funcionamento ) 
+ /////// OBS: antes de usar o git merge nome_da_branch sempre usa um git pull pois se vc fez alguma alteração ou o usuario fez alteração la pode dar problema na hora da modificação SEGUE A ETAPA:
+
+1- $git pull da branch principal
+2- gerar uma nova branch a partir da branch principal
+3- trabalhar e adicionar novas funcionalidades na nova branch que criou.
+4- finalizar o trabalho na branch temporária
+5- $ git checkout na branch principal
+6- $ git pull
+5- Mergiar(unir) o código da branch temporário com a branch principal(depois de testar)
+6- $ git push da branch principal
+
+
+
+************** unindo os codigos de branch atravez do $ git pull request (merge democratico) **************
