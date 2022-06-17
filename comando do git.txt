@@ -1,0 +1,20 @@
+commits
+$ git status - para saber o estado dos codigos, qual esta modificado e quais ja foram enviado 
+$ git add "nome do arquivo" - para adicionar o arquivo especifico para a fila do commit
+$ git add . - para adicionar todos os arquivos modificados para a fila do commit
+$ git commit -m "mensagem que da para aquele commit" - para dar o nome daquela commit que voce esta enviando para o github
+
+$git push - onde voce ira puxar os arquivos para aquela branch
+//OBS: as vezes o programa vai pedir que voce loga no github ou se caso voce estiver conectado ele vai pedir somente o login e a senha
+
+
+
+
+branch - são pastas onde voce vai trabalhar o seu codigo
+para visualizar as branch
+$ git branch
+// logo apos isso aparecerá as branchs(pastas) feitas e a pasta usada no momento ( geralmente esta marcado com uma cor )
+
+para criar um branch
+$ git branch nome_do_branch(pasta)
+
