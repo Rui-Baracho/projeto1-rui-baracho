@@ -24,7 +24,7 @@ $ git checkout nome_da_branch
 
 OBS: voce pode usar um código só para criar e fazer com que sua branch seja a principal utilizando esse comando $ git checkout -b nome_da_branch
 
-************** unindo os codigos de branch diferentes **************
+************** unindo os codigos de branch diferentes (git merge) **************
 // é aconselhavel olhar qual branch esta para mandar esse codigo "USE O $ git branch"
 $ git checkout master (a branch onde voce quer colocar os codigos)
 $ git merge staging ( a branch onde vc fez as modificações sem alterar o codigo ja em funcionamento ) 
@@ -38,3 +38,7 @@ $ git merge staging ( a branch onde vc fez as modificações sem alterar o codig
 6- $ git pull
 5- Mergiar(unir) o código da branch temporário com a branch principal(depois de testar)
 6- $ git push da branch principal
+
+
+
+************** unindo os codigos de branch atravez do $ git pull request (merge democratico) **************
